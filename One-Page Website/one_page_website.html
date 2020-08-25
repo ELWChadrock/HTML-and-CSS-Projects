@@ -11,11 +11,60 @@
 <!-- Pictures -->
 
 <p> Are you looking to be as cool as this guy?</p>
-<img src="raidou.jpg" alt="Devil Summoner" width="500" height="600">
-<h1>You could summon things like this</h1>
-<img src="JackFrost.png" alt="Jack Frost" width="500" height="600">
-<h1>And this!</h1>
-<img src="mov.jpg" alt="Mov" width="500" height="600">
+<div class="row">
+	<div class="column">
+<img src="raidou.jpg" onclick="openPictures();currentSlide(1)"
+class="hover-shadow" style="height:200px; width 300px;">
+	</div>
+<div class="column">	
+<img src="JackFrost.png" onclick="openPictures();currentSlide(2)"
+class="hover-shadow">
+</div>
+<div class="column">
+<img src="mov.jpg" onclick="openPictures();currentSlide(3)"
+class="hover-shadow">
+</div>
+
+<div id="openPictures" class="pictures">
+	<span class="close cursor" onclick="closePictures()">&times;</span>
+	<div class="mySlides">
+		<div class="numbertext">1 / 3</div>
+		<img src="raidou.jpg" style="width:100%; height:200px;>
+	</div>
+
+	<div class="mySlides">
+		<div class="numbertext">2 / 3</div>
+		<img src="JackFrost.png" style="width:100%">
+	</div>
+
+	<div class="mySlides">
+		<div class="numbertext">3 / 3</div>
+		<img src="mov.jpg" style="width:100%">
+	</div>
+
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10094;</a>
+
+	<div class="caption-container">
+		<p id="caption"></p>
+	</div>
+
+	<div class="column">
+		<img class="slides" src="raidou.jpg" style="width:200px; height:300px;" onclick="currentSlide(1)"
+		alt="Summoner">
+	</div>
+
+	<div class="column">
+		<img class="slides" src="JackFrost.png" onclick="currentSlide(2)"
+		alt="frost">
+	</div>
+
+	<div class="column">
+		<img class="slides" src="mov.jpg" onclick="currentSlide(3)"
+		alt="mov">
+	</div>
+
+</div>
 
 <!--End Pictures-->
 
@@ -33,7 +82,8 @@ Fill this out below!</p>
 								<input class="signup" type="text" value="Contact in case of emergency"><br>
 								<input class="signup" type="text" value="Contact phone numher"><br>
 </form>
-
+<script src="JS/one_page_website.js" defer></script>
+</body>
 <footer>
 <p>Director of the class: Chad Okulovich</p>
 <p>All questions and concerns can be answered at emailing <a href="mailto:elwchadrock@gmail.com">elwchadrock@gmail.com</a></p>
